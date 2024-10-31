@@ -1,102 +1,173 @@
-*{
-    gap: 0;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.navbar{
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    background-color: #4C3163;
-    color: palevioletred;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-decoration: none;
-    font-family: monospace;
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #4c3163;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font-family: monospace;
 }
 .navbar a {
-    color: palevioletred;
+  color: palevioletred;
 }
 
-.kakuna{
-    width: 70px;
+.kakuna {
+  width: 70px;
 }
 
-.pgPrincipal{
-    background-color: #6F4891;
-    min-height: 100vh;
+.pgPrincipal {
+  background-color: #6f4891;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  font-family: monospace;
+  justify-content: center;
+  align-items: center;
+}
+
+.inicial {
+  height:50vh;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.animacao_bem_vindo {
+  font-size: 3em;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: digitando 3s steps(30, end) forwards;
+  border-right: 2px solid black;
+  max-width: fit-content;
+}
+@keyframes digitando {
+  from {
+    width: 0;
+  }
+  to {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
+    border-right: none;
+  }
 }
 
-.inicial{
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: monospace;
-}
-.animacao_bem_vindo{
-    font-size: 2em;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: digitando 3s steps(30, end) forwards;
-    border-right: 2px solid black;
-}
-@keyframes digitando{
-    from {width: 0;}
-    to {width: 220px;
-    border-right: 0;
-    }
+.animacao {
+  font-size: 2em;  
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  animation: digitandoNome 3s steps(30, end) forwards,
+    piscando 0.5s step-end infinite alternate;
+  animation-delay: 1s;
+  border-right: 2px solid black;
+  visibility: hidden;
+  max-width: fit-content;
 }
 
-
-.animacao{
-    overflow: hidden;
-    white-space: nowrap;
-    opacity: 0;
-    animation: digitandoNome 3s steps(30, end) forwards, piscando 0.5s step-end infinite alternate;
-    animation-delay: 3s;
-    border-right: 2px solid black;
-    visibility: hidden;
+.animacao:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.animacao:nth-of-type(3) {
+  animation-delay: 3.5s;
+}
+.animacao:nth-of-type(4) {
+  animation-delay: 5s;
+}
+.animacao:nth-of-type(5) {
+  animation-delay: 6.5s;
 }
 
-@keyframes digitandoNome{
-    from {width: 0;
-        opacity: 1;
-        visibility: visible;
-    }
-    to {width: 250px;
+@keyframes digitandoNome {
+  from {
+    width: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    width: 100%;
     visibility: visible;
     opacity: 1;
-    }
-   
+    border-right: none;
+  }
 }
 
 @keyframes piscando {
-    0%, 100% { border-color: black; }
-    50% { border-color: transparent; }
+  0%,
+  100% {
+    border-color: black;
   }
+  50% {
+    border-color: transparent;
+  }
+}
+
+.apresentacao {
+  display: flex;
+  justify-content: space-around;
+}
+.textoApresentacao {
+  width: 250px;
+}
+
+.qualidades{
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.qualidadeItens{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.qualidadeItens li{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+.qualidades p {
+  width: 50%;
+}
+
+.tecnologiaDiv{
+  padding: 30px;
+}
 
 
-.apresentacao{
-    display: flex;
-    justify-content: space-around;
+.tecnologias{
+  display: flex;
+  list-style-type: none;
+  padding: 50px;
+  gap: 50px;
 }
-.textoApresentacao{  
-    width: 250px;
-}
-.fotoPerfil{
-    width: 150px;
-    height: 150px;
+.tecnologias li a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
