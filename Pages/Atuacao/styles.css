@@ -1,0 +1,57 @@
+* {
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #4c3163;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: monospace;
+    z-index: 1;
+  }
+  .navbar a {
+    color: palevioletred;
+  }
+  
+  .kakuna {
+    width: 70px;
+  }
+
+  .areaAtuacao{
+    background-color: #6f4891;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    gap: 30px;
+    font-family: monospace;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px ;
+    font-size: 1.5em;
+  }
+
+  .areaAtuacao h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+.areaAtuacao p {
+    max-width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    line-height: 1.6;
+    text-align: justify;
+  }
