@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #4c3163;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: monospace;
+  z-index: 1;
+}
+
+.navbar a {
+  color: palevioletred;
+  font-weight: bold;
+}
+
+.kakuna {
+  width: 70px;
+}
+
+.paginaFormacao {
+  background-color: #6f4891;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  gap: 30px;
+  font-family: monospace;
+}
+
+.paginaFormacao h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.formacaoItem {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formacaoItem h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.formacaoItem h4 {
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+.formacaoItem p {
+  margin: 5px 0;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.rodape {
+  width: 100%;
+  height: 100px;
+  background-color: #4c3163;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font-family: monospace;
+  color: palevioletred;
+}
+
+.redes {
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+}
+
+.redes li:hover {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+.redes img {
+  width: 50px;
+  height: 50px;
+}

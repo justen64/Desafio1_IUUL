@@ -174,20 +174,121 @@ a {
 
 .tecnologias {
   display: flex;
-  list-style-type: none;
-  padding: 50px;
-  gap: 50px;
-}
-.tecnologias li a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  color: white;
+  padding: 25px;
 }
-.tecnologias li:hover {
+
+.tecnologias img:hover {
   transform: scale(1.05);
   filter: brightness(0.8);
+  cursor: pointer;
+}
+
+.checkboxModal {
+  display: none;
+}
+
+#modalControlarReact:checked + .modalReact {
+  display: flex;
+}
+
+#modalControlarJavaScript:checked + .modalJavaScript {
+  display: flex;
+}
+
+#modalControlarJava:checked + .modalJava {
+  display: flex;
+}
+
+#modalControlarTypeScript:checked + .modalTypeScript {
+  display: flex;
+}
+
+.modalReact,
+.modalJavaScript,
+.modalJava,
+.modalTypeScript {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+
+.infoReact,
+.infoJavaScript,
+.infoJava,
+.infoTypeScript {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: abrindo 0.3s;
+  text-align: left;
+}
+
+@keyframes abrindo {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.infoReact h2,
+.infoJavaScript h2,
+.infoJava h2,
+.infoTypeScript h2 {
+  color: #4c3163;
+}
+
+.infoReact p,
+.infoJavaScript p,
+.infoJava p,
+.infoTypeScript p {
+  width: 100%;
+}
+
+.infoReact ul,
+.infoJavaScript ul,
+.infoJava ul,
+.infoTypeScript ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+
+
+.fecharModal {
+  background-color: #4c3163;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.fecharModal:hover {
+  background-color: #6f4891;
 }
 
 .rodape {

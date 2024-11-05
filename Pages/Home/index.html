@@ -11,11 +11,11 @@
       <nav>
         <div class="navbar">
           <img class="kakuna" src="../../assets/Kakuna.png" alt="" />
-          <a href="#">Home</a>
-          <a href="#">Formação</a>
-          <a href="#">Atuação</a>
-          <a href="#">Portfólio</a>
-          <a href="#">Contato</a>
+          <a href="../Home/index.html">Home</a>
+          <a href="../Formacao/formacao.html">Formação</a>
+          <a href="../Atuacao/atuacao.html">Atuação</a>
+          <a href="../Portfolio/portfolio.html">Portfólio</a>
+          <a href="../Contato/contato.html">Contato</a>
         </div>
       </nav>
     </header>
@@ -60,35 +60,146 @@
 
         <div class="tecnologiaDiv">
           <h2>Algumas tecnologias que eu utilizo</h2>
-          <ul class="tecnologias">
-            <li>
-              <a href=""
-                ><img class="kakuna" src="../../assets/react.png" alt="" />
-                React</a
-              >
-            </li>
-            <li>
-              <a href=""
-                ><img class="kakuna" src="../../assets/javascript.png" alt="" />
-                JavaScript</a
-              >
-            </li>
-            <li>
-              <a href=""
-                ><img
+          <div class="tecnologias">
+              <label for="modalControlarReact" class="abrirModal">
+                <img class="kakuna" src="../../assets/react.png" alt="React" />
+              </label>
+              <input
+                type="checkbox"
+                class="checkboxModal"
+                id="modalControlarReact"
+              />
+              <div class="modalReact">
+                <div class="infoReact">
+                  <h2>React</h2>
+                  <p>
+                    React é uma biblioteca JavaScript para a criação de
+                    interfaces de usuário, focada em componentes reutilizáveis.
+                    Ideal para construir interfaces de usuário rápidas e
+                    dinâmicas.
+                  </p>
+                  <h3>Prós</h3>
+                  <ul>
+                    <li>Alta performance devido à Virtual DOM</li>
+                    <li>Componentes reutilizáveis</li>
+                    <li>Grande suporte da comunidade</li>
+                  </ul>
+                  <h3>Contras</h3>
+                  <ul>
+                    <li>Curva de aprendizado complexa</li>
+                    <li>Configuração inicial pode ser trabalhosa</li>
+                  </ul>
+                  <label for="modalControlarReact" class="fecharModal"
+                    >Fechar</label
+                  >
+                </div>
+              </div>
+              <label for="modalControlarJavaScript" class="abrirModal">
+                <img
                   class="kakuna"
-                  src="../../assets/react.png"
-                  alt=""
-                />TypeScript
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img class="kakuna" src="../../assets/java.png" alt="" />Java</a
-              >
-            </li>
-          </ul>
-        </div>
+                  src="../../assets/javascript.png"
+                  alt="React"
+                />
+              </label>
+              <input
+                type="checkbox"
+                class="checkboxModal"
+                id="modalControlarJavaScript"
+              />
+              <div class="modalJavaScript">
+                <div class="infoJavaScript">
+                  <h2>JavaScript</h2>
+                  <p>
+                    JavaScript é uma linguagem de programação usada
+                    principalmente para o desenvolvimento web, que permite
+                    adicionar interatividade e dinamismo às páginas.
+                  </p>
+                  <h3>Prós</h3>
+                  <ul>
+                    <li>
+                      Versatilidade e ampla aplicação no desenvolvimento web
+                    </li>
+                    <li>Alta demanda no mercado de trabalho</li>
+                    <li>Grande suporte da comunidade e muitas bibliotecas</li>
+                  </ul>
+                  <h3>Contras</h3>
+                  <ul>
+                    <li>
+                      Pode ser difícil de depurar devido a erros silenciosos
+                    </li>
+                    <li>
+                      Flexibilidade pode levar a práticas de codificação
+                      inconsistentes
+                    </li>
+                  </ul>
+                  <label for="modalControlarJavaScript" class="fecharModal"
+                    >Fechar</label
+                  >
+                </div>
+              </div>
+              <label for="modalControlarJava" class="abrirModal">
+                <img class="kakuna" src="../../assets/java.png" alt="React" />
+              </label>
+              <input
+                type="checkbox"
+                class="checkboxModal"
+                id="modalControlarJava"
+              />
+              <div class="modalJava">
+                <div class="infoJava">
+                  <h2>Java</h2>
+                  <p>
+                    Java é uma linguagem de programação robusta e independente
+                    de plataforma, amplamente usada para desenvolvimento
+                    corporativo e de sistemas.
+                  </p>
+                  <h3>Prós</h3>
+                  <ul>
+                    <li>Plataforma independente (Java Virtual Machine)</li>
+                    <li>Suporte a orientação a objetos</li>
+                    <li>Altamente seguro e escalável</li>
+                  </ul>
+                  <h3>Contras</h3>
+                  <ul>
+                    <li>Consome mais memória do que linguagens mais novas</li>
+                    <li>
+                      Sintaxe mais verbosa, o que torna o código mais longo
+                    </li>
+                  </ul>
+                  <label for="modalControlarJava" class="fecharModal"
+                    >Fechar</label
+                  >
+                </div>
+              </div>
+              <label for="modalControlarTypeScript" class="abrirModal">
+                <img class="kakuna" src="../../assets/typescript.png" alt="typescript" />
+              </label>
+              <input
+                type="checkbox"
+                class="checkboxModal"
+                id="modalControlarTypeScript"
+              />
+              <div class="modalTypeScript">
+                <div class="infoTypeScript">
+                    <h2>TypeScript</h2>
+                    <p>
+                        TypeScript é um superconjunto de JavaScript que adiciona tipos estáticos à linguagem, tornando o desenvolvimento mais robusto.
+                    </p>
+                    <h3>Prós</h3>
+                    <ul>
+                        <li>Detecção de erros em tempo de compilação</li>
+                        <li>Melhor suporte para IDEs e autocompletar</li>
+                        <li>Facilidade em trabalhar com grandes bases de código</li>
+                    </ul>
+                    <h3>Contras</h3>
+                    <ul>
+                        <li>Curva de aprendizado para quem não conhece tipos</li>
+                        <li>Compilação adicional necessária</li>
+                    </ul>
+                    <label for="modalControlarTypeScript" class="fecharModal">Fechar</label>
+                </div>
+            </div>
+            </div>
 
         <a href="../Portfolio/Portfolio.html">Veja meus projetos</a>
       </div>
