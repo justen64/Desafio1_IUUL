@@ -38,7 +38,7 @@ a {
   gap: 30px;
   font-family: monospace;
   text-align: center;
-  padding-bottom: 80px ;
+  padding-bottom: 80px;
   font-size: 1.5em;
 }
 
@@ -125,7 +125,9 @@ a {
   transition: opacity 0.3s ease;
 }
 
-.infoReact, .infoJavaScript, .infoJava {
+.infoReact,
+.infoJavaScript,
+.infoJava {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -151,11 +153,15 @@ a {
   }
 }
 
-.infoReact h2, .infoJavaScript h2, .infoJava h2 {
+.infoReact h2,
+.infoJavaScript h2,
+.infoJava h2 {
   color: #4c3163;
 }
 
-.infoReact ul, .infoJavaScript ul, .infoJava ul {
+.infoReact ul,
+.infoJavaScript ul,
+.infoJava ul {
   padding-left: 20px;
   list-style-type: disc;
 }
@@ -203,4 +209,114 @@ a {
 .redes img {
   width: 50px;
   height: 50px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 80px;
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 0.9em;
+  }
+
+  .kakuna {
+    width: 50px;
+  }
+
+  .conteinerProjetos {
+    font-size: 1.2em;
+  }
+
+  .projetos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .projetos video {
+    width: 100%;
+  }
+
+  .descricaoProjeto {
+    text-align: center;
+  }
+
+  .tecnologias {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 60px;
+    padding: 5px;
+  }
+
+  .navbar a {
+    font-size: 0.8em;
+  }
+
+  .conteinerProjetos {
+    font-size: 1em;
+    padding-top: 70px;
+  }
+
+  .tecnologias img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+
+  .infoReact,
+  .infoJavaScript,
+  .infoJava {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .rodape {
+    height: 80px;
+  }
+
+  .redes img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    height: 50px;
+    gap: 5px;
+  }
+
+  .navbar a {
+    font-size: 0.7em;
+  }
+
+  .conteinerProjetos {
+    font-size: 0.9em;
+    padding-top: 60px;
+  }
+
+  .projetos {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .descricaoProjeto h2 {
+    font-size: 1.1em;
+  }
+
+  .rodape {
+    height: 70px;
+  }
+
+  .redes img {
+    width: 25px;
+    height: 25px;
+  }
 }

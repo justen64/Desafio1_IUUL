@@ -222,7 +222,6 @@ a {
   transition: opacity 0.3s ease;
 }
 
-
 .infoReact,
 .infoJavaScript,
 .infoJava,
@@ -273,8 +272,6 @@ a {
   list-style-type: disc;
 }
 
-
-
 .fecharModal {
   background-color: #4c3163;
   color: white;
@@ -318,4 +315,91 @@ a {
 .redes img {
   width: 50px;
   height: 50px;
+}
+
+@media (max-width: 768px) {
+  .pgPrincipal {
+    width: 100%;
+  }
+
+  .animacao_bem_vindo {
+    font-size: 2em;
+  }
+
+  .animacao {
+    font-size: 1.5em;
+  }
+
+  .qualidades p {
+    width: 80%;
+    font-size: 1.2em;
+  }
+
+  .tecnologias img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+  }
+
+  .rodape {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .redes {
+    gap: 15px;
+  }
+
+  .redes img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kakuna {
+    width: 50px;
+  }
+  .animacao_bem_vindo {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .animacao {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .inicial {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .qualidadeItens {
+    grid-template-columns: 1fr;
+    font-size: 1.2em;
+  }
+
+  .tecnologias img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .infoReact,
+  .infoJavaScript,
+  .infoJava,
+  .infoTypeScript {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .rodape {
+    padding: 10px 0;
+  }
+
+  .redes img {
+    width: 35px;
+    height: 35px;
+  }
 }

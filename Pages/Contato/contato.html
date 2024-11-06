@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <img class="kakuna" src="../../assets/Kakuna.png" alt="Pokemon chamado kakuna" />
+          <a href="../Home/index.html" tabindex=0>Home</a>
+          <a href="../Portfolio/portfolio.html" tabindex=0>Portfólio</a>
+          <a href="../Atuacao/atuacao.html" tabindex=0>Atuação</a>
+          <a href="../Formacao/formacao.html" tabindex=0>Formação</a>
+          <a href="../Contato/contato.html" tabindex=0>Contato</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="contatoPagina">
+        <h1 tabindex=0>Meus contatos</h1>
+        <article class="contatos">
+          <h3 tabindex=0>Meus contatos</h3>
+          <p tabindex=0>Email: rodrigojusten@gmail.com</p>
+          <p tabindex=0>Telefone: (24)988357680</p>
+        </article>
+        <article class="minhaRedes">
+          <h3 tabindex=0>Minhas redes</h3>
+          <a tabindex=0 href=""><img class="kakuna" src="../../assets/github.png" alt="" /></a>
+          <a tabindex=0 href=""><img class="kakuna" src="../../assets/linkedin.png" alt="" /></a>
+        </article>
+        <form class="formulario" action="" method="get">
+          <label tabindex=0 for="name">Nome:</label>
+          <input type="text" id="nome" name="name" required />
+
+          <label tabindex=0 for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label tabindex=0 for="message">Mensagem:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button tabindex=0 type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="rodape">
+        <h3 tabindex=0>Minhas redes</h3>
+        <ul class="redes">
+          <li>
+            <a
+              tabindex=0
+              href="https://github.com/justen64"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="../../assets/github.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a
+              tabindex=0
+              href="https://www.linkedin.com/in/rodrigo-justen27"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="../../assets/linkedin.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
