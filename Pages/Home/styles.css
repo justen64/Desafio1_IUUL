@@ -377,7 +377,7 @@ a {
 
   .qualidadeItens {
     grid-template-columns: 1fr;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .tecnologias img {
@@ -392,6 +392,7 @@ a {
   .infoTypeScript {
     width: 90%;
     padding: 20px;
+    font-size: 0.5em;
   }
 
   .rodape {
